@@ -31,3 +31,37 @@ bool Zergling::isAlive()
 		return false;
 }
 
+//void Zergling::erase(int entitySize, Zergling *entityArr)
+//{
+//	Zergling* newSquad = new Zergling[entitySize - 1];
+//
+//	for (int i = 1; i < entitySize; i++)
+//	{
+//		newSquad[i] = entityArr[i];
+//	}
+//	delete entityArr;
+//
+//	Zergling* entityArr = new Zergling[entitySize - 1];
+//
+//	for (int i = 1; i < entitySize; i++)
+//	{
+//		entityArr[i] = newSquad[i];
+//	}
+//
+//	delete newSquad;
+//}
+
+
+Zergling* Zergling::erase(int entitySize, Zergling *entityArr)
+{
+	Zergling* newSquad = new Zergling[entitySize - 1];
+
+	for (int i = 1; i < entitySize; i++)
+	{
+		newSquad[i] = entityArr[i];
+	}
+	delete &entityArr;
+	return newSquad;
+}
+
+

@@ -24,3 +24,13 @@ int Entity::attack()
 void Entity::takeDamage(int damage)
 {
 }
+
+Entity Entity::erase(int entitySize, Entity *entityArr)
+{
+	return *entityArr;
+}
+
+//void Entity::erase(int entitySize, Entity *entityArr)
+//{
+//}
+
