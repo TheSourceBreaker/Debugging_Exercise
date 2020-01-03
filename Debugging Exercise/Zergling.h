@@ -10,7 +10,7 @@ public:
 	int attack();
 	void takeDamage(int damage);
 	bool isAlive();
-	Zergling* Zergling::erase(int entitySize, Zergling *entityArr);
+	//Zergling* Zergling::erase(int entitySize, Zergling *entityArr);
 	//void Zergling::erase(int entitySize, Zergling *entityArr);
 
 };

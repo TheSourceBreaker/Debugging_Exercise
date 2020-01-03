@@ -10,7 +10,7 @@ public:
 	int attack();
 	void takeDamage(int damage);
 	bool isAlive();
-	Marine erase(int entitySize, Marine *entityArr);
+	//Marine erase(int entitySize, Marine *entityArr);
 	//void erase(int entitySize, Marine *entityArr);
 
 };

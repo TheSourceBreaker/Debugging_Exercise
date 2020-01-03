@@ -4,6 +4,8 @@
 
 Entity::Entity()
 {
+	maxHealth = 0;
+	health = 0;
 }
 
 
@@ -13,7 +15,10 @@ Entity::~Entity()
 
 bool Entity::isAlive()
 {
-	return true;
+	if (health > 0)
+		return true;
+	else
+		return false;
 }
 
 int Entity::attack()
@@ -23,6 +28,9 @@ int Entity::attack()
 
 void Entity::takeDamage(int damage)
 {
+	health = health - damage;
+	if (health < 0)
+		health = 0;
 }
 
 Entity Entity::erase(int entitySize, Entity *entityArr)
